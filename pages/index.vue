@@ -1,5 +1,7 @@
 <template>
-  <Home/>
+  <main>
+    <NitronHeader/>
+  </main>
 </template>
 
 <script lang="ts">
@@ -12,8 +14,26 @@ export default Vue.extend({
       title: 'Nitron',
       meta: [
         { name: 'description', content: 'Unlocking the Authenticity of Emotion to bring Virtual Worlds to life' },
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       ],
     }
   },
 })
 </script>
+
+<style lang="scss" scoped>
+  main {
+    height: 100%;
+  }
+</style>
+
+<style lang="scss">
+  @import "/static/styles/fonts.scss";
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #1E1E1E
+  }
+</style>
