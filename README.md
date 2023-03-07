@@ -1,0 +1,2 @@
+# nitron-static
+Static Website
