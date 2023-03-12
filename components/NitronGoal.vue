@@ -26,20 +26,23 @@
 
 <style lang="scss" scoped>
 	.goal-container {
-		padding: 0 2rem 2rem;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
-	h2 {
+	#goal {
 		color: white;
 		font-size: 4rem;
+		width: 100%;
+		padding: 1rem;
 		align-self: flex-start;
+		background-color: #7900B3;
 	}
 	.goal-description-p {
 		color: white;
 		font-size: 2rem;
 		max-width: 50rem;
+		margin: 2rem;
 	}
 	.avatar {
 		width: 10rem;
@@ -60,6 +63,9 @@
 		}
 		.avatar {
 			width: 7rem;
+		}
+		#goal {
+			font-size: 3rem;
 		}
 	}
 </style>

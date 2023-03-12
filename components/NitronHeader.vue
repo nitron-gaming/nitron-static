@@ -1,7 +1,7 @@
 
 <template>
 	<header>
-		<h2> - Unlocking the Authenticity of Emotion to bring Virtual Worlds to life - </h2>
+		<h2>Unlocking the Authenticity of Emotion to bring Virtual Worlds to life</h2>
 	</header>
 </template>
 

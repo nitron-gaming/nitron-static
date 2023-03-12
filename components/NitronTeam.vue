@@ -17,20 +17,27 @@
 
 <style lang="scss" scoped>
 	.container {
-		background-color: #04aa98;
-		padding: 2rem;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
 	#team {
+		background-color: #04aa98;
 		color: white;
 		font-size: 4rem;
+		width: 100%;
+		padding: 1rem;
 		align-self: flex-start;
 	}
 	.members {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+		padding: 2rem;
+	}
+	@media screen and (max-width: 30rem) {
+		#team {
+			font-size: 3rem;
+		}
 	}
 </style>
 
