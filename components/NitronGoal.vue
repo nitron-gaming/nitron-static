@@ -26,7 +26,7 @@
 
 <style lang="scss" scoped>
 	.goal-container {
-		padding: 2rem;
+		padding: 0 2rem 2rem;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -45,5 +45,21 @@
 		width: 10rem;
 		margin: 1rem;
 		float: right;
+	}
+	@media screen and (max-width: 40rem) {
+		.goal-description-p {
+			font-size: 1.5rem;
+		}
+		.avatar {
+			width: 8rem;
+		}
+	}
+	@media screen and (max-width: 30rem) {
+		.goal-description-p {
+			font-size: 1.2rem;
+		}
+		.avatar {
+			width: 7rem;
+		}
 	}
 </style>
