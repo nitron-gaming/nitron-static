@@ -1,20 +1,22 @@
+
 <template>
 	<header>
-		<h1>Nitron</h1>
+		<h2> - Unlocking the Authenticity of Emotion to bring Virtual Worlds to life - </h2>
 	</header>
 </template>
 
 <style lang="scss" scoped>
 	header {
-		background-color: #04aa98;
-		color: #7200be;
-		padding: 1rem;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		h1 {
-			font-size: 5rem;
-			text-align: center;
-		}
+		padding: 2rem;
+	}
+	h2 {
+		font-size: 2rem;
+		color: white;
+		text-align: center;
+		font-style: italic;
 	}
 </style>
+
+<script lang="ts">
+
+</script>

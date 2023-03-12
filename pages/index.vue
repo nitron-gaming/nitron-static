@@ -1,6 +1,10 @@
 <template>
   <main>
+    <NitronNav/>
     <NitronHeader/>
+    <NitronGoal/>
+    <NitronDiagram/>
+    <!-- <NitronTeam/> -->
   </main>
 </template>
 
@@ -8,17 +12,17 @@
 import Vue from 'vue'
 
 export default Vue.extend({
-  name: 'IndexPage',
-  head() {
-    return {
-      title: 'Nitron',
-      meta: [
-        { name: 'description', content: 'Unlocking the Authenticity of Emotion to bring Virtual Worlds to life' },
-        { charset: 'utf-8' },
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      ],
-    }
-  },
+    name: "IndexPage",
+    head() {
+        return {
+            title: "Nitron",
+            meta: [
+                { name: "description", content: "Unlocking the Authenticity of Emotion to bring Virtual Worlds to life" },
+                { charset: "utf-8" },
+                { name: "viewport", content: "width=device-width, initial-scale=1" },
+            ],
+        };
+    },
 })
 </script>
 
