@@ -4,7 +4,7 @@
     <NitronHeader/>
     <NitronGoal/>
     <NitronDiagram/>
-    <!-- <NitronTeam/> -->
+    <NitronTeam/>
   </main>
 </template>
 

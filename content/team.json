@@ -4,26 +4,22 @@
 		{
 			"name": "Zac Waite",
 			"position": "CEO",
-			"headshot": "zac-waite.jpg",
-			"description": "Focused on the API development"
+			"headshot": "zac-waite.jpg"
 		},
 		{
 			"name": "Dhruv Bhatia",
 			"position": "VP of ML",
-			"headshot": "dhruv-bhatia.jpg",
-			"description": "Focused on the ML development"
+			"headshot": "dhruv-bhatia.jpg"
 		},
 		{
 			"name": "Hargun Mujral",
 			"position": "CTO",
-			"headshot": "hargun-mujral.jpg",
-			"description": "Focused on the engineering development"
+			"headshot": "hargun-mujral.jpg"
 		},
 		{
 			"name": "Jordan Bosco",
-			"position": "Artistic Developer",
-			"headshot": "jordan-bosco.jpg",
-			"description": "Focused on the artistic development"
+			"position": "Artistic Dev",
+			"headshot": "jordan-bosco.jpg"
 		}
 	]
 }
