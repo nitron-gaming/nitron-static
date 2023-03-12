@@ -5,6 +5,7 @@
     <NitronGoal/>
     <NitronDiagram/>
     <NitronTeam/>
+    <NitronFooter/>
   </main>
 </template>
 
