@@ -1,7 +1,7 @@
 
 <template>
 	<footer>
-		<h2>Contact Us</h2>
+		<h2 id="contact">Contact Us</h2>
 		<p>Feel free to reach out to me: zac@nitron.ca</p>
 	</footer>
 </template>
@@ -22,6 +22,14 @@
 	p {
 		font-size: 1.5rem;
 		color: white;
+	}
+	@media screen and (max-width: 40rem) {
+		footer {
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+		}
 	}
 </style>
 

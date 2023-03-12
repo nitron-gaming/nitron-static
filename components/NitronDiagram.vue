@@ -35,7 +35,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		flex-direction: column;
+		flex-direction: row;
 	}
 	.add-diagram {
 		display: flex;
@@ -43,6 +43,7 @@
 		justify-content: center;
 		margin: 2rem;
 		max-width: 80rem;
+		margin-right: 0;
 	}
 	.emotions-block {
 		display: flex;
@@ -122,6 +123,28 @@
 		h6 {
 			font-size: 2rem;
 			margin: 0;
+		}
+	}
+	@media screen and (max-width: 80rem) {
+		.diagram-container {
+			flex-direction: column;
+		}
+		.add-diagram {
+			margin-bottom: 0;
+			margin-right: 2rem;
+		}
+	}
+	@media screen and (max-width: 42rem) {
+		.add-diagram {
+			flex-direction: column;
+			margin-bottom: 0;
+		}
+		.equals-diagram {
+			flex-direction: column;
+			margin-top: 0;
+		}
+		.behaviour-block {
+			margin-left: 0;
 		}
 	}
 </style>
