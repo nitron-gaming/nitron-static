@@ -33,13 +33,12 @@
 	#goal {
 		color: white;
 		font-size: 4rem;
-		width: 100%;
+		width: calc(100% - 2rem);
 		padding: 1rem;
 		align-self: flex-start;
 		background-color: #7900B3;
 	}
 	.goal-description-p {
-		color: white;
 		font-size: 2rem;
 		max-width: 50rem;
 		margin: 2rem;

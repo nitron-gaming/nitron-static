@@ -3,10 +3,10 @@
 		<div class="add-diagram">
 			<div class="emotions-block">
 				<div class="emotion-faces">
-					<img src="pixel-art/very-angry-face.png" alt="Very Angry" />
-					<img src="pixel-art/confused-face.png" alt="Very Angry" />
-					<img src="pixel-art/shocked-face.png" alt="Very Angry" />
-					<img src="pixel-art/sad-face.png" alt="Very Angry" />
+					<img src="pixel-art/very-angry-face.png" alt="Very Angry Face" />
+					<img src="pixel-art/confused-face.png" alt="Confused Face" />
+					<img src="pixel-art/shocked-face.png" alt="Shocked Face" />
+					<img src="pixel-art/sad-face.png" alt="Sad Face" />
 				</div>
 				<h6>Emotions</h6>
 			</div>
@@ -15,8 +15,8 @@
 			</div>
 			<div class="interactions-block">
 				<div class="interaction-avatars">
-					<img class="interaction-bad-guy" src="pixel-art/bad-guy.png" alt="Very Angry" />
-					<img class="interaction-main-avatar" src="pixel-art/shocked.png" alt="Very Angry" />
+					<img class="interaction-bad-guy" src="pixel-art/bad-guy.png" alt="Bad Guy" />
+					<img class="interaction-main-avatar" src="pixel-art/shocked.png" alt="Shocked Character" />
 				</div>
 				<h6>Interactions</h6>
 			</div>
