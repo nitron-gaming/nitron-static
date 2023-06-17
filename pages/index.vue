@@ -5,7 +5,6 @@
     <NitronGoal/>
     <NitronDiagram/>
     <NitronTeam/>
-    <NitronFooter/>
   </main>
 </template>
 
@@ -39,6 +38,5 @@ export default Vue.extend({
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: #1E1E1E
   }
 </style>

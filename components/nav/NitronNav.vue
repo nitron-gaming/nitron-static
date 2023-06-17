@@ -3,9 +3,10 @@
 	<nav>
 		<NitronNameLogo class="logo"/>
 		<div class="nav-items">
-			<NitronNavItem name="Goal" link="#goal" />
-			<NitronNavItem name="Team" link="#team" />
-			<NitronNavItem name="Contact" link="#contact" />
+			<NavLinkItem name="Demo" link="/demo" />
+			<NavLinkItem name="Docs" link="/docs" />
+			<NavLinkItem name="API" link="/api" />
+			<NavLinkItem name="Contact" link="/contact" />
 		</div>
 	</nav>
 </template>
@@ -23,7 +24,7 @@
 			width: 100%;
 		}
 	}
-	@media screen and (max-width: 30rem) {
+	@media screen and (max-width: 40rem) {
 		.nav-items {
 			display: none;
 		}
