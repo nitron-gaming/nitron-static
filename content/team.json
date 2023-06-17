@@ -4,22 +4,22 @@
 		{
 			"name": "Zac Waite",
 			"position": "CEO",
-			"headshot": "zac-waite.jpg"
+			"headshot": "images/zac-waite.jpg"
 		},
 		{
 			"name": "Dhruv Bhatia",
 			"position": "VP of ML",
-			"headshot": "dhruv-bhatia.jpg"
+			"headshot": "images/dhruv-bhatia.jpg"
 		},
 		{
 			"name": "Hargun Mujral",
 			"position": "CTO",
-			"headshot": "hargun-mujral.jpg"
+			"headshot": "images/hargun-mujral.jpg"
 		},
 		{
 			"name": "Jordan Bosco",
 			"position": "Artistic Dev",
-			"headshot": "jordan-bosco.jpg"
+			"headshot": "images/jordan-bosco.jpg"
 		}
 	]
 }
