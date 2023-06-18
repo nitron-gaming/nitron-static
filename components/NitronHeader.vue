@@ -10,9 +10,9 @@
 			<h4>We are unlocking the Authenticity of Emotion to bring Virtual Worlds to life</h4>
 		</section>
 		<section class="call-to-action">
-			<button
-				@click="goToDemo"
-			>Get a Demo</button>
+			<a href="/demo">
+				<button>Get a Demo</button>
+			</a>
 		</section>
 	</header>
 </template>
@@ -82,11 +82,4 @@
 </style>
 
 <script lang="ts">
-export default {
-	methods: {
-		goToDemo() {
-			this.$router.push('/demo')
-		}
-	}
-}
 </script>

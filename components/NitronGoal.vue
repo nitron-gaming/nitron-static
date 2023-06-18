@@ -39,32 +39,31 @@
 		background-color: #7900B3;
 	}
 	.goal-description-p {
-		font-size: 2rem;
+		font-size: 2.5rem;
 		max-width: 50rem;
 		margin: 2rem;
 	}
 	.avatar {
-		width: 10rem;
-		margin: 1rem;
+		width: 12rem;
+		margin: 0 1.5rem;
 		float: right;
+	}
+	@media screen and (max-width: 60rem) {
+		.goal-description-p {
+			font-size: 2rem;
+			max-width: 42rem;
+		}
+		.avatar {
+			width: 10rem;
+		}
 	}
 	@media screen and (max-width: 40rem) {
 		.goal-description-p {
 			font-size: 1.5rem;
-		}
-		.avatar {
-			width: 8rem;
-		}
-	}
-	@media screen and (max-width: 30rem) {
-		.goal-description-p {
-			font-size: 1.2rem;
+			max-width: 35rem;
 		}
 		.avatar {
 			width: 7rem;
-		}
-		#goal {
-			font-size: 3rem;
 		}
 	}
 </style>
