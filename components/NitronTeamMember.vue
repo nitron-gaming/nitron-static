@@ -15,7 +15,7 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: flex-start;
-		background-color: #7200BE;
+		background-color: var(--color-primary);
 		margin: 1rem;
 		border-radius: 2rem;
 		overflow: hidden;

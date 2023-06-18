@@ -24,7 +24,7 @@
 		h1 {
 			font-size: 2rem;
 			margin-left: 0.6rem;
-			color: #7200be;
+			color: var(--color-primary);
 		}
 	}
 </style>

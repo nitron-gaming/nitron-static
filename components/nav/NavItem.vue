@@ -6,7 +6,7 @@
 
 <style lang="scss" scoped>
 	div {
-		background-color: #04aa98;
+		background-color: var(--color-secondary);
 		display: flex;
 		justify-content: center;
 		align-items: center;

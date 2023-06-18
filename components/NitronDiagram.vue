@@ -50,7 +50,7 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-between;
-		background-color: #04aa98;
+		background-color: var(--color-secondary);
 		padding: 1rem;
 		border-radius: 2rem;
 		h6 {
@@ -85,7 +85,7 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-between;
-		background-color: #7200BE;
+		background-color: var(--color-primary);
 		padding: 1rem;
 		border-radius: 2rem;
 		h6 {

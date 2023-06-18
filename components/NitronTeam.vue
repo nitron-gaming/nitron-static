@@ -22,7 +22,7 @@
 		align-items: center;
 	}
 	#team {
-		background-color: #04aa98;
+		background-color: var(--color-secondary);
 		color: white;
 		font-size: 4rem;
 		width: calc(100% - 2rem);

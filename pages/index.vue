@@ -33,7 +33,7 @@ export default Vue.extend({
 </style>
 
 <style lang="scss">
-  @import "/static/styles/fonts.scss";
+  @import "/static/styles/global.scss";
   html, body {
     margin: 0;
     padding: 0;

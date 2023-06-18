@@ -34,17 +34,17 @@
   			-webkit-text-fill-color: transparent;
 		}
 		.emotion-word {
-			background: -webkit-linear-gradient(0deg, #CE84FF, #7200BE);
+			background: -webkit-linear-gradient(0deg, var(--color-primary-light), var(--color-primary));
 			-webkit-background-clip: text;
 			background-clip: text;
 		}
 		.interaction-word {
-			background: -webkit-linear-gradient(0deg, #92FFF3, #04AA98);
+			background: -webkit-linear-gradient(0deg, var(--color-secondary-light), var(--color-secondary));
 			-webkit-background-clip: text;
 			background-clip: text;
 		}
 		.realism-word {
-			background: -webkit-linear-gradient(0deg, rgb(99, 177, 255), #1281DF);
+			background: -webkit-linear-gradient(0deg, var(--color-tertiary-light), var(--color-tertiary));
 			-webkit-background-clip: text;
 			background-clip: text;
 		}
@@ -61,7 +61,7 @@
 	.call-to-action {
 		padding: 2rem;
 		button {
-			background-color: #1281DF;
+			background-color: var(--color-tertiary);
 			color: white;
 			font-size: 2rem;
 			padding: 1rem 2rem;

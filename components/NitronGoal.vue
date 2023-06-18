@@ -36,7 +36,7 @@
 		width: calc(100% - 2rem);
 		padding: 1rem;
 		align-self: flex-start;
-		background-color: #7900B3;
+		background-color: var(--color-primary);
 	}
 	.goal-description-p {
 		font-size: 2.5rem;

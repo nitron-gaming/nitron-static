@@ -5,3 +5,12 @@ h1,h2,h3,h4,h5,h6,p,a {
     text-decoration: none;
     margin: 0;
 }
+
+:root {
+	--color-primary: #7200BE;
+	--color-primary-light: #CE84FF;
+	--color-secondary: #04AA98;
+	--color-secondary-light: #92FFF3;
+	--color-tertiary: #1281DF;
+	--color-tertiary-light: #63b1ff;
+}
