@@ -2,8 +2,8 @@
 	<div class="member-container" >
 		<img class="member-headshot" :src="headshot" alt="Headshot" />
 		<div class="member-info" >
-			<h3>{{name}}</h3>
-			<h3>{{position}}</h3>
+			<h3 class="member-name">{{name}}</h3>
+			<h3 class="member-position">{{position}}</h3>
 			<!-- <img :src="action_image" alt="Action Image" /> -->
 		</div>
 	</div>
@@ -15,12 +15,10 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: flex-start;
-		background-color: var(--color-primary);
+		background-color: var(--color-tertiary);
 		margin: 1rem;
-		border-radius: 2rem;
+		border-radius: 1.5rem;
 		overflow: hidden;
-		// max-width: 20rem;
-		// max-height: 25rem;
 	}
 	.member-headshot {
 		width: 100%;
@@ -28,15 +26,23 @@
 	}
 	.member-info {
 		display: flex;
+		padding:0.25rem;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		h3 {
 			color: white;
-			font-size: 2rem;
 			margin: 0;
 			text-align: center;
 		}
+	}
+	.member-name {
+		font-weight: bold;
+		font-size: 2rem;
+	}
+	.member-position {
+		color: var(--color-secondary);
+		font-size: 1.5rem;
 	}
 </style>
 

@@ -68,6 +68,7 @@
 			border-radius: 1rem;
 			border: none;
 			cursor: pointer;
+			font-weight: 600;
 			&:hover {
 				opacity: 0.8;
 			}
