@@ -14,7 +14,7 @@
 <style lang="scss" scoped>
 	nav {
 		.logo {
-			width: 12rem;
+			width: 16rem;
 		}
 		background-color: white;
 		display: flex;

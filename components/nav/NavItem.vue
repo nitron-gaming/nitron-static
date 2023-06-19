@@ -1,13 +1,16 @@
 <template>
-	<div>
-		<slot />
-	</div>
+	<a :href="link">
+		<div>
+			<slot />
+		</div>
+	</a>
 </template>
 
 <style lang="scss" scoped>
-	div {
-		background-color: var(--color-secondary);
+	div, a {
 		display: flex;
+		flex-grow: 1;
+		background-color: var(--color-secondary);
 		justify-content: center;
 		align-items: center;
 		cursor: pointer;
@@ -18,4 +21,11 @@
 </style>
 
 <script lang="ts">
+export default {
+	props: {
+		link: {
+			type: String,
+		},
+	}
+}
 </script>

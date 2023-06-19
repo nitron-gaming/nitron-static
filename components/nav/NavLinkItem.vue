@@ -1,6 +1,6 @@
 <template>
-	<NavItem>
-		<a :href="link">{{ name }}</a>
+	<NavItem :link="link">
+		{{ name }}
 	</NavItem>
 </template>
 
