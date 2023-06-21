@@ -77,7 +77,28 @@
 
 	@media screen and (max-width: 85rem) {
 		.words {
+			padding: 3rem 1rem 1rem;
 			flex-direction: column;
+		}
+	}
+	@media screen and (max-width: 40rem) {
+		.words {
+			padding: 2rem 1rem 0.5rem;
+			h3 {
+				font-size: 5rem;
+			}
+		}
+	}
+	@media screen and (max-width: 30rem) {
+		.words {
+			padding: 1rem 1rem 0rem;
+			h3 {
+				font-size: 4rem;
+				margin: 0rem;
+			}
+		}
+		.slogan>h4 {
+			font-size: 2.5rem;
 		}
 	}
 </style>

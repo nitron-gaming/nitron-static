@@ -121,6 +121,9 @@
 	}
 	.behaviour-block {
 		background-color: var(--color-tertiary);
+		h6 {
+			text-align: center;
+		}
 	}
 	.behaviour-avatars {
 		display: flex;
@@ -173,7 +176,8 @@
 		}
 		.behaviour-block {
 			margin-left: 0;
-			height: 31rem;
+			height: 33rem;
+			width: 17rem;
 		}
 		.behaviour-avatars {
 			flex-direction: column;
@@ -182,6 +186,26 @@
 		.fight-avatars {
 			margin-right: 0;
 			margin-bottom: 1.5rem;
+		}
+	}
+	@media screen and (max-width: 30rem) {
+		.behaviour-block {
+			width: 17rem;
+			height: 29rem;
+		}
+		.interaction-shocked-avatar {
+			max-width: 5rem;
+			margin-right: 1.5rem;
+		}
+		.interaction-bad-guy-avatar {
+			max-width: 6.6rem;
+		}
+		.very-happy-avatar {
+			max-width: 6.2rem;
+			margin-right: 1.5rem;
+		}
+		.woman-blushing-avatar {
+			max-width: 5.5rem;
 		}
 	}
 </style>
