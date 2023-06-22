@@ -48,7 +48,6 @@
 
 <script lang="ts">
 export default {
-	name: 'NitronTeamMember',
 	props: {
 		name: {type: String},
 		position: {type: String},

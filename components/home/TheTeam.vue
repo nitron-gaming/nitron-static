@@ -2,7 +2,7 @@
 	<section class="container">
 		<h2 id="team">The Team</h2>
 		<div class="members">
-			<NitronTeamMember
+			<HomeTeamMember
 				v-for="member in members"
 				:key="member.name"
 				:name="member.name"

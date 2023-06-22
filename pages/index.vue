@@ -1,10 +1,10 @@
 <template>
   <main>
     <NitronNav/>
-    <NitronHeader/>
-    <NitronGoal/>
-    <NitronDiagram/>
-    <NitronTeam/>
+    <HomeNitronHeader/>
+    <HomeOurGoal/>
+    <HomeNitronDiagram/>
+    <HomeTheTeam/>
   </main>
 </template>
 
