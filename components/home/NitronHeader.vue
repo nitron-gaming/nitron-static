@@ -26,7 +26,7 @@
 	.words {
 		padding: 4rem 1rem 2rem;
 		h3 {
-			font-size: 6rem;
+			font-size: 6.5vw;
 			color: black;
 			text-align: center;
 			font-weight: 900;
@@ -52,7 +52,7 @@
 	.slogan {
 		padding: 2rem;
 		h4 {
-			font-size: 3rem;
+			font-size: 4vw;
 			color: black;
 			text-align: center;
 			width: 55rem;
@@ -75,30 +75,32 @@
 		}
 	}
 
-	@media screen and (max-width: 85rem) {
+	@media screen and (max-width: 60rem) {
 		.words {
+			h3 {
+				font-size: 10vw;
+			}
 			padding: 3rem 1rem 1rem;
 			flex-direction: column;
+		}
+		.slogan {
+			h4 {
+				font-size: 5vw;
+			}
 		}
 	}
 	@media screen and (max-width: 40rem) {
 		.words {
 			padding: 2rem 1rem 0.5rem;
-			h3 {
-				font-size: 5rem;
-			}
 		}
 	}
 	@media screen and (max-width: 30rem) {
 		.words {
 			padding: 1rem 1rem 0rem;
 			h3 {
-				font-size: 4rem;
+				font-size: 3.5rem;
 				margin: 0rem;
 			}
-		}
-		.slogan>h4 {
-			font-size: 2.5rem;
 		}
 	}
 </style>
