@@ -1,7 +1,8 @@
 <template>
   <main>
     <NitronNav/>
-    <p>Demo</p>
+    <DemoEmailListPrompt/>
+    <EmailListInput/>
   </main>
 </template>
 

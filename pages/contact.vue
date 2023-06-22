@@ -1,7 +1,7 @@
 <template>
   <main>
     <NitronNav/>
-    <p>Contact</p>
+    <ContactOurEmails/>
   </main>
 </template>
 

@@ -1,7 +1,8 @@
 <template>
   <main>
     <NitronNav/>
-    <p>API</p>
+    <ApiEmailListPrompt/>
+    <EmailListInput/>
   </main>
 </template>
 
