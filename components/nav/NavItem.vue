@@ -14,9 +14,11 @@
 		justify-content: center;
 		align-items: center;
 		cursor: pointer;
+		transition: background-color 0.5s;
 		&:hover {
-			opacity: 0.8;
+			background-color: var(--color-primary);
 		}
+		height: 3rem;
 	}
 </style>
 
