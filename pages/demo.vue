@@ -1,6 +1,5 @@
 <template>
   <main>
-    <NitronNav/>
     <DemoEmailListPrompt/>
     <EmailListInput/>
   </main>
