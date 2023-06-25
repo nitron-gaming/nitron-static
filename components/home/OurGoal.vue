@@ -32,7 +32,7 @@
 	}
 	#goal {
 		color: white;
-		font-size: 4rem;
+		font-size: 5vw;
 		width: calc(100% - 2rem);
 		padding: 1rem;
 		align-self: flex-start;
@@ -49,6 +49,9 @@
 		float: right;
 	}
 	@media screen and (max-width: 60rem) {
+		#goal {
+			font-size: 6.5vw;
+		}
 		.goal-description-p {
 			font-size: 2rem;
 			max-width: 42rem;
@@ -58,6 +61,9 @@
 		}
 	}
 	@media screen and (max-width: 40rem) {
+		#goal {
+			font-size: 8vw;
+		}
 		.goal-description-p {
 			font-size: 1.5rem;
 			max-width: 35rem;

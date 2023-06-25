@@ -24,7 +24,7 @@
 	#team {
 		background-color: var(--color-secondary);
 		color: white;
-		font-size: 4rem;
+		font-size: 5vw;
 		width: calc(100% - 2rem);
 		padding: 1rem;
 		align-self: flex-start;
@@ -34,9 +34,14 @@
 		grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 		padding: 2rem;
 	}
-	@media screen and (max-width: 30rem) {
+	@media screen and (max-width: 60rem) {
 		#team {
-			font-size: 3rem;
+			font-size: 6.5vw;
+		}
+	}
+	@media screen and (max-width: 40rem) {
+		#team {
+			font-size: 8vw;
 		}
 	}
 </style>
