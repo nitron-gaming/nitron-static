@@ -25,8 +25,7 @@ export default {
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-  ],
+  plugins: [],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: {
@@ -46,7 +45,30 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    '@nuxtjs/firebase'
   ],
+  firebase: {
+    config: {
+      apiKey: "AIzaSyDqp4agIU9onsAQNTt_f0wOHZXsgR1gA2g",
+      authDomain: "nitron-website.firebaseapp.com",
+      projectId: "nitron-website",
+      storageBucket: "nitron-website.appspot.com",
+      messagingSenderId: "554340564132",
+      appId: "1:554340564132:web:a789a824f18d84a3fd3a31",
+      measurementId: "G-7B3BK11DBQ"
+    },
+    services: {
+      auth: {
+        persistence: 'local', 
+        initialize: {
+          onAuthStateChangedMutation: 'ON_AUTH_STATE_CHANGED_MUTATION',
+        },
+        ssr: true,
+      },
+      firestore: true,
+      analytics: true,
+    },
+  },
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
