@@ -53,20 +53,25 @@
 import { auth, db } from '~/plugins/firebase'
 import { GithubAuthProvider, signInWithPopup } from 'firebase/auth'
 import { doc, setDoc } from 'firebase/firestore'
+import { sendEmailVerification } from "firebase/auth";
 
 export default {
   methods: {
     async signUpWithGithub() {
       const provider = new GithubAuthProvider();
+	  provider.addScope('read:user')
       try {
         const result = await signInWithPopup(auth, provider);
         const user = result.user;
         await setDoc(doc(db, 'users', user.uid), {
           displayName: user.displayName,
-          email: user.email
+          email: user.email,
+		  photoURL: user.photoURL,
+		  githubAccessToken: result.user.accessToken
         });
-        // // Update the Vuex store
-        // this.$store.dispatch('setUser', {
+		await sendEmailVerification(auth.currentUser);
+        // Update the Vuex store
+        // this.$store.dispatch('', {
         //   displayName: user.displayName,
         //   email: user.email
         // });
