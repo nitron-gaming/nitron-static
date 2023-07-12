@@ -1,7 +1,7 @@
 <template>
   <main>
     <ApiEmailListPrompt/>
-    <EmailListInput/>
+    <SignUp/>
   </main>
 </template>
 

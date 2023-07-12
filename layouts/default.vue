@@ -1,7 +1,5 @@
 <template>
 	<div>
-		<NitronNav />
-		<!-- Google tag (gtag.js) -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-7B3BK11DBQ"></script>
 		<script>
 		window.dataLayer = window.dataLayer || [];
@@ -10,6 +8,8 @@
 
 		gtag('config', 'G-7B3BK11DBQ');
 		</script>
+		<NitronNav />
+		<!-- Google tag (gtag.js) -->
 		<nuxt />
 	</div>
 </template>

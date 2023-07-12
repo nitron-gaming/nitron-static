@@ -1,7 +1,7 @@
 <template>
   <main>
     <DemoEmailListPrompt/>
-    <EmailListInput/>
+    <SignUp/>
   </main>
 </template>
 

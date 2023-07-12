@@ -1,7 +1,7 @@
 <template>
   <main>
     <DocsEmailListPrompt/>
-    <EmailListInput/>
+    <SignUp/>
   </main>
 </template>
 
