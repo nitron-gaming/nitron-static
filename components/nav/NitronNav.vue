@@ -23,7 +23,9 @@
 				<NavLinkItem name="API" link="/api" />
 				<NavLinkItem name="Contact" link="/contact" />
 			</div>
-			<AccountIcon />
+			<a href="/account">
+				<AccountIcon />
+			</a>
 		</section>
 		<section class="block-nav">
 		</section>

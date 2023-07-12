@@ -1,16 +1,26 @@
 
 <template>
 	<div>
-		<img :src="photoURL" alt="User Icon" />
+		<no-ssr>
+			<img :src="photoURL" alt="User Icon" />
+			<img src="/account.svg" alt="..." slot="placeholder"/>
+		</no-ssr>
 	</div>
 </template>
 
 
 <style lang="scss" scoped>
-	img {
+	div {
 		height: 3rem;
 		width: 3rem;
 		cursor: pointer;
+		line-height: 3rem;
+		text-align: center;
+		font-size: 1.5rem;
+	}
+	img {
+		width: 100%;
+		height: 100%;
 	}
 </style>
 
