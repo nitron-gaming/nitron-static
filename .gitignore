@@ -98,3 +98,5 @@ sw.*
 
 # Vim swap files
 *.swp
+
+firebase-auth-sw.js

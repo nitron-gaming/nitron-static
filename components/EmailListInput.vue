@@ -1,11 +1,14 @@
 
 <template>
 	<section>
-		<div class="sign-up-buttons">
+		<div v-if="!isLoggedIn" class="sign-up-buttons">
 			<button class="github-button" @click="signUpWithGithub">
 				<p>Sign Up with Github</p>
 				<img src="/github-mark-white.svg" alt="Github logo" />
 			</button>
+		</div>
+		<div v-else>
+			<p>Signed Up!</p>
 		</div>
 	</section>
 </template>
@@ -47,29 +50,39 @@
 			margin-left: 1rem;
 		}
 	}
+	p {
+		color: black;
+		font-size: 2rem;
+		width: 100%;
+		text-align: center;
+	}
 </style>
 
-<script>
+<script lang="ts">
 import { auth, db } from '~/plugins/firebase'
 import { GithubAuthProvider, signInWithPopup } from 'firebase/auth'
 import { doc, setDoc } from 'firebase/firestore'
 import { sendEmailVerification } from "firebase/auth";
+import { mapState } from 'vuex';
 
 export default {
+	computed: mapState({
+		isLoggedIn: (state: any) => state.authUser !== null
+	}),
   methods: {
     async signUpWithGithub() {
       const provider = new GithubAuthProvider();
 	  provider.addScope('read:user')
       try {
         const result = await signInWithPopup(auth, provider);
-        const user = result.user;
+        const user = result.user as any;
         await setDoc(doc(db, 'users', user.uid), {
           displayName: user.displayName,
           email: user.email,
 		  photoURL: user.photoURL,
-		  githubAccessToken: result.user.accessToken
+		  githubAccessToken: user.accessToken
         });
-		await sendEmailVerification(auth.currentUser);
+		if (auth.currentUser) await sendEmailVerification(auth.currentUser);
         // Update the Vuex store
         // this.$store.dispatch('', {
         //   displayName: user.displayName,
