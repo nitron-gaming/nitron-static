@@ -1,26 +1,35 @@
-export const state = () => ({
-  authUser: null,
+import { AccountType } from "~/types/account";
+import { StateType } from "~/types/state";
+
+export const state = (): StateType => ({
+  account: undefined,
 });
 
 export const getters = {
-  authUser(state: any) {
-    return state.authUser;
+  account(state: StateType): AccountType | null | undefined  {
+    return state.account;
   },
+  isAuthenticated(state: StateType): boolean {
+    return !!state.account;
+  },
+  accountLoaded(state: StateType): boolean {
+    return state.account !== undefined;
+  }
 };
 
 export const actions = {}
 
 export const mutations = {
-  ON_AUTH_STATE_CHANGED_MUTATION: (state: any, { authUser, claims }: any) => {
+  ON_AUTH_STATE_CHANGED_MUTATION: (state: StateType, { authUser, claims }: any) => {
     if (authUser) {
-      state.authUser = {
+      state.account = {
         uid: authUser.uid,
         email: authUser.email,
         displayName: authUser.displayName,
         photoURL: authUser.photoURL,
       };
     } else {
-      state.authUser = null;
+      state.account = null;
     }
   },
 };

@@ -1,15 +1,19 @@
 <template>
-  <main v-if="authenticated">
-	<AccountNamedHeader />
-	<AccountProfile />
-	<AccountSignOut />
-  </main>
-  <main v-else>
-	<SignUp />
-  </main>
+	<main v-if="!accountLoaded">
+		<h2>Loading...</h2>
+	</main>
+	<main v-else-if="isAuthenticated">
+		<AccountNamedHeader />
+		<AccountProfile />
+		<AccountSignOut />
+	</main>
+	<main v-else>
+		<SignUp />
+	</main>
 </template>
 
 <script lang="ts">
+import { mapGetters } from "vuex";
 import Vue from "vue";
 
 export default Vue.extend({
@@ -28,12 +32,7 @@ export default Vue.extend({
         };
     },
     computed: {
-        user() {
-            return this.$store.state.authUser;
-        },
-        authenticated() {
-            return this.$store.state.authUser != null;
-        },
+        ...mapGetters(["isAuthenticated", "account", "accountLoaded"]),
     },
     methods: {
         async logout() {

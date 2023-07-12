@@ -25,12 +25,14 @@
 </style>
 
 <script lang="ts">
-import { mapState } from 'vuex';
+import { mapGetters } from 'vuex';
+import { StateType } from '~/types/state';
 export default {
-	computed: mapState({
-		displayName: (state: any) => state.authUser?.displayName ?? 'Guest',
-		authenticated: (state: any) => state.authUser !== null,
-		photoURL: (state: any) => state.authUser?.photoURL ?? '/account.svg',
-	})
+	computed: {
+		...mapGetters(['account']),
+		photoURL(state: StateType): string {
+			return state.account?.photoURL ?? '/account.svg'
+		}
+	}
 }
 </script>

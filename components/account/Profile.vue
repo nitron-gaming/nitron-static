@@ -2,11 +2,11 @@
 <template>
 	<section class="profile-section">
 		<no-ssr placeholder="Loading...">
-			<img :src="user.photoURL" alt="User Icon" />
+			<img :src="account.photoURL" alt="User Icon" />
 		</no-ssr>
 		<div>
-			<h4>{{ user.displayName }}</h4>
-			<h4>{{ user.email }}</h4>
+			<h4>{{ account.displayName }}</h4>
+			<h4>{{ account.email }}</h4>
 		</div>
 	</section>
 </template>
@@ -28,12 +28,9 @@
 </style>
 
 <script lang="ts">
-import { mapState } from 'vuex';
+import { mapGetters } from 'vuex';
 
 export default {
-	computed: mapState({
-		user: (state: any) => state.authUser,
-		authenticated: (state: any) => state.authUser !== null,
-	})
+	computed: mapGetters(['account'])
 }
 </script>

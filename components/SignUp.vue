@@ -1,7 +1,10 @@
 
 <template>
 	<section>
-		<div v-if="!isLoggedIn" class="sign-up-buttons">
+        <div v-if="!accountLoaded">
+            <p>Loading...</p>
+        </div>
+		<div v-else-if="!isAuthenticated" class="sign-up-buttons">
 			<button class="github-button" @click="signUpWithGithub">
 				<p>Sign Up with Github</p>
 				<img src="/github-mark-white.svg" alt="Github logo" />
@@ -63,35 +66,35 @@ import { auth, db } from '~/plugins/firebase'
 import { GithubAuthProvider, signInWithPopup } from 'firebase/auth'
 import { doc, setDoc } from 'firebase/firestore'
 import { sendEmailVerification } from "firebase/auth";
-import { mapState } from 'vuex';
+import { mapGetters } from 'vuex';
 
 export default {
-	computed: mapState({
-		isLoggedIn: (state: any) => state.authUser !== null
-	}),
-  methods: {
+	computed:{
+		...mapGetters(['account', 'isAuthenticated', 'accountLoaded']),
+	},
+  	methods: {
     async signUpWithGithub() {
-      const provider = new GithubAuthProvider();
-	  provider.addScope('read:user')
-      try {
-        const result = await signInWithPopup(auth, provider);
-        const user = result.user as any;
-        await setDoc(doc(db, 'users', user.uid), {
-          displayName: user.displayName,
-          email: user.email,
-		  photoURL: user.photoURL,
-		  githubAccessToken: user.accessToken
-        });
-		if (auth.currentUser) await sendEmailVerification(auth.currentUser);
-        // Update the Vuex store
-        // this.$store.dispatch('', {
-        //   displayName: user.displayName,
-        //   email: user.email
-        // });
-      } catch (error) {
-        console.error("Error signing up with Github: ", error);
-      }
+        const provider = new GithubAuthProvider();
+	    provider.addScope('read:user')
+        try {
+            const result = await signInWithPopup(auth, provider);
+            const user = result.user as any;
+            await setDoc(doc(db, 'users', user.uid), {
+                displayName: user.displayName,
+                email: user.email,
+                photoURL: user.photoURL,
+                githubAccessToken: user.accessToken
+            });
+            if (auth.currentUser) await sendEmailVerification(auth.currentUser);
+            // Update the Vuex store
+            // this.$store.dispatch('', {
+            //   displayName: user.displayName,
+            //   email: user.email
+            // });
+            } catch (error) {
+                console.error("Error signing up with Github: ", error);
+            }
+        }
     }
-  }
 }
 </script>
