@@ -1,9 +1,7 @@
 
 <template>
 	<section class="profile-section">
-		<no-ssr placeholder="Loading...">
-			<img :src="account.photoURL" alt="User Icon" />
-		</no-ssr>
+		<img :src="account.photoURL" alt="User Icon" />
 		<div>
 			<h4>{{ account.displayName }}</h4>
 			<h4>{{ account.email }}</h4>

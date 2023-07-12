@@ -1,10 +1,7 @@
 
 <template>
 	<div>
-		<no-ssr>
-			<img :src="photoURL" alt="User Icon" />
-			<img src="/account.svg" alt="..." slot="placeholder"/>
-		</no-ssr>
+		<img :src="photoURL" alt="User Icon" />
 	</div>
 </template>
 

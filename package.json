@@ -16,7 +16,6 @@
     "firebase": "^9.23.0",
     "firebaseui": "^6.0.2",
     "nuxt": "^2.15.8",
-    "pinia": "^2.1.4",
     "vue": "^2.7.10",
     "vue-server-renderer": "^2.7.10",
     "vue-template-compiler": "^2.7.10"
