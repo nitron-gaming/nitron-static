@@ -1,9 +1,9 @@
 <template>
-	<a :href="link">
+	<NuxtLink :to="link">
 		<div>
 			<slot />
 		</div>
-	</a>
+	</NuxtLink>
 </template>
 
 <style lang="scss" scoped>

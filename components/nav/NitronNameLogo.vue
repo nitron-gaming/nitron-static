@@ -1,10 +1,10 @@
 <template>
-	<a href="/">
+	<NuxtLink to="/">
 		<div>
 			<img src="/images/nitron-logo.png" alt="Nitron Logo" />
 			<h1>Nitron</h1>
 		</div>
-	</a>
+	</NuxtLink>
 </template>
 
 <style lang="scss" scoped>

@@ -23,9 +23,9 @@
 				<NavLinkItem name="API" link="/api" />
 				<NavLinkItem name="Contact" link="/contact" />
 			</div>
-			<a href="/account">
+			<NuxtLink to="/account">
 				<AccountIcon />
-			</a>
+			</NuxtLink>
 		</section>
 		<section class="block-nav">
 		</section>
