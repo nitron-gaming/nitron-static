@@ -91,7 +91,7 @@
 <script lang="ts">
 import { auth, db } from '~/plugins/firebase'
 import { GithubAuthProvider, GoogleAuthProvider, signInWithPopup } from 'firebase/auth'
-import { doc, setDoc } from 'firebase/firestore'
+import { doc, getDoc, setDoc } from 'firebase/firestore'
 import { sendEmailVerification } from "firebase/auth";
 import { mapGetters } from 'vuex';
 
@@ -106,13 +106,20 @@ export default {
         try {
             const result = await signInWithPopup(auth, provider);
             const user = result.user as any;
+
+			const docRef = doc(db, 'users', user.uid);
+			const docSnap = await getDoc(docRef);
+			if (!docSnap.exists()) {
+				if (auth.currentUser) await sendEmailVerification(auth.currentUser);
+			}
+
             await setDoc(doc(db, 'users', user.uid), {
                 displayName: user.displayName,
                 email: user.email,
                 photoURL: user.photoURL,
                 githubAccessToken: user.accessToken
             });
-            if (auth.currentUser) await sendEmailVerification(auth.currentUser);
+
             // Update the Vuex store
             // this.$store.dispatch('', {
             //   displayName: user.displayName,
@@ -127,13 +134,18 @@ export default {
 		  try {
 			const result = await signInWithPopup(auth, provider)
 			const user = result.user as any
+			const docRef = doc(db, 'users', user.uid);
+			const docSnap = await getDoc(docRef);
+			if (!docSnap.exists()) {
+				if (auth.currentUser) await sendEmailVerification(auth.currentUser);
+			}
+
 			await setDoc(doc(db, 'users', user.uid), {
 			  displayName: user.displayName,
 			  email: user.email,
 			  photoURL: user.photoURL,
 			  googleAccessToken: user.accessToken,
 			})
-			if (auth.currentUser) await sendEmailVerification(auth.currentUser)
 			// Update the Vuex store
 			// this.$store.dispatch('', {
 			//   displayName: user.displayName,
