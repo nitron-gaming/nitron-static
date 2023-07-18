@@ -11,7 +11,7 @@
 				<h6>Emotions</h6>
 			</div>
 			<div class="add-image">
-				<img src="add.svg" alt="Arrow" />
+				<img src="add.svg" alt="Plus" />
 			</div>
 			<div class="diagram-block interactions-block">
 				<div class="interaction-avatars">
@@ -22,17 +22,15 @@
 			</div>
 		</div>
 		<div class="equals-diagram">
-			<img class="equal-image" src="equal.svg" alt="Equals" />
+			<div class="equal-image">
+				<img src="equal.svg" alt="Equals" />
+			</div>
 			<div class="diagram-block behaviour-block">
 				<div class="behaviour-avatars">
-					<div class="fight-avatars">
-						<img class="interaction-shocked-avatar" src="pixel-art/scared-right.png" alt="Scared Character" />
-						<img class="interaction-bad-guy-avatar" src="pixel-art/angry-bad-guy.png" alt="Angry Bad Character" />
-					</div>
-					<div class="love-avatars">
-						<img class="very-happy-avatar" src="pixel-art/very-happy.png" alt="Scared Character" />
-						<img class="woman-blushing-avatar" src="pixel-art/woman-blushing.png" alt="Angry Bad Character" />
-					</div>
+					<img class="interaction-shocked-avatar" src="pixel-art/scared-right.png" alt="Scared Character" />
+					<img class="interaction-bad-guy-avatar" src="pixel-art/angry-bad-guy.png" alt="Angry Bad Character" />
+					<img class="very-happy-avatar" src="pixel-art/very-happy.png" alt="Scared Character" />
+					<img class="woman-blushing-avatar" src="pixel-art/woman-blushing.png" alt="Angry Bad Character" />
 				</div>
 				<h6>Dynamic NPC Behaviour!</h6>
 			</div>
@@ -46,14 +44,14 @@
 		align-items: center;
 		justify-content: center;
 		flex-direction: row;
+		margin: 1rem 2rem;
 	}
 	.add-diagram {
 		display: flex;
 		align-items: stretch;
 		justify-content: center;
-		margin: 2rem;
-		max-width: 80rem;
-		margin-right: 0;
+		max-width: 40rem;
+		width: 100%;
 	}
 	.diagram-block {
 		display: flex;
@@ -61,8 +59,8 @@
 		align-items: center;
 		justify-content: space-between;
 		padding: 1rem;
-		height: 18rem;
 		border-radius: 2rem;
+		max-height: 16rem;
 		h6 {
 			color: white;
 			font-size: 2rem;
@@ -72,15 +70,13 @@
 		background-color: var(--color-secondary);
 	}
 	.emotion-faces {
-		// 2x2 square of images:
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr;
-		grid-gap: 0.8rem;
+		grid-gap: 4%;
+		margin: 0 4%;
 		img {
-			max-width: 7rem;
-			max-height: 7rem;
-			margin: 0.3rem;
+			max-width: 100%;
+			max-height: 100%;
 		}
 	}
 	.add-image {
@@ -100,26 +96,28 @@
 		justify-content: space-between;
 		align-items: flex-end;
 		img {
-			margin: 0.3rem;
+			margin: 2%;
+		}
+		.interaction-bad-guy {
+			width: 100%;
+		}	
+		.interaction-main-avatar {
+			width: 90%;
 		}
 	}
-	.interaction-bad-guy {
-		max-width: 8rem;
-	}	
-	.interaction-main-avatar {
-		max-width: 7rem;
-	}
 	.equal-image {
-		margin-right: 1rem;
+		margin: 1rem;
 	}
 	.equals-diagram {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		max-width: 80rem;
-		margin: 2rem;
+		width: 100%;
+		max-width: 40rem;
+		// margin: 2rem;
 	}
 	.behaviour-block {
+		width: 100%;
 		background-color: var(--color-tertiary);
 		h6 {
 			text-align: center;
@@ -127,85 +125,55 @@
 	}
 	.behaviour-avatars {
 		display: flex;
-		justify-content: space-between;
-	}
-	.fight-avatars {
-		display: flex;
-		justify-content: space-between;
+		width: 100%;
+		justify-content: center;
 		align-items: flex-end;
-		max-width: 16rem;
-		margin-right: 4rem;
 	}
 	.interaction-shocked-avatar {
-		max-width: 6rem;
-		margin-right: 1.5rem;
+		width: 75%;
+		margin-right: 4%;
 	}
 	.interaction-bad-guy-avatar {
-		max-width: 8rem;
-	}
-	.love-avatars {
-		display: flex;
-		justify-content: space-between;
-		align-items: flex-end;
-		max-width: 16rem;
+		width: 100%;
+		margin-right: 8%;
 	}
 	.very-happy-avatar {
-		max-width: 7.5rem;
-		margin-right: 1.5rem;
+		width: 90%;
+		margin-right: 4%;
 	}
 	.woman-blushing-avatar {
-		max-width: 6.6rem;
+		width: 80%;
 	}
-	@media screen and (max-width: 80rem) {
+	@media screen and (max-width: 65rem) {
 		.diagram-container {
 			flex-direction: column;
 		}
 		.add-diagram {
-			margin-bottom: 0;
-			margin-right: 2rem;
+			margin-bottom: 5vw;
+		}
+		.diagram-block {
+			padding: 4%;
+			border-radius: 4vw;
+		}
+		.equal-image {
+			margin: 4vw;
+			img {
+				width: 8vw;
+				height: 8vw;
+			}
+		}
+		.add-image {
+			img {
+				width: 8vw;
+				height: 8vw;
+			}
 		}
 	}
-	@media screen and (max-width: 42rem) {
-		.add-diagram {
-			flex-direction: column;
-			margin-bottom: 0;
-		}
-		.equals-diagram {
-			flex-direction: column;
-			margin-top: 0;
-		}
-		.behaviour-block {
-			margin-left: 0;
-			height: 33rem;
-			width: 17rem;
-		}
-		.behaviour-avatars {
-			flex-direction: column;
-			align-items: center;
-		}
-		.fight-avatars {
-			margin-right: 0;
-			margin-bottom: 1.5rem;
-		}
-	}
-	@media screen and (max-width: 30rem) {
-		.behaviour-block {
-			width: 17rem;
-			height: 29rem;
-		}
-		.interaction-shocked-avatar {
-			max-width: 5rem;
-			margin-right: 1.5rem;
-		}
-		.interaction-bad-guy-avatar {
-			max-width: 6.6rem;
-		}
-		.very-happy-avatar {
-			max-width: 6.2rem;
-			margin-right: 1.5rem;
-		}
-		.woman-blushing-avatar {
-			max-width: 5.5rem;
+	@media screen and (max-width: 45rem) {
+		.diagram-block {
+			h6 {
+				font-size: 5vw;
+			}
 		}
 	}
 </style>
