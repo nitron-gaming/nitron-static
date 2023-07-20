@@ -22,6 +22,7 @@
 		align-items: center;
 		justify-content: center;
 		max-width: 50rem;
+		width: 100%;
 		img {
 			height: 100%;
 			width: 100%;

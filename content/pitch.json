@@ -1,0 +1,13 @@
+{
+	"description": "We are creating a new type of personality engine that focuses not on dialogue and NLP - but instead on user behaviour, allowing video game NPCs or personal assistants to feel more human.",
+	"problem": "Video Game NPCs are known for either being too predictable or completely abnormal. For game developers, NPC logic can be a difficult and time consuming task, so it is no surprise games lack human behavior.",
+	"business_model": {
+		"intro": "As a video game SDK, we want to run on client devices long term, selling a software license. However, our MVP will be released as a cloud API.",
+		"cloud_api": "While we continue to develop a production ready engine, our cloud API will allow us to make quick changes to fix bugs.",
+		"software_license": "Once our IP is protected and our engine is secured for a client device, our SDK will easily transition to a client-only model."
+	},
+	"why_nitron": {
+		"gamers": "There is very clear support from gamers to integrate AI systems into NPCS. Studies have shown that more realistic NPCs do increase player retention.",
+		"developers": " But we don't just want a better NPC for the user, we also want an easier development process for game developers. Our platform is built to reduce the amount of code the developer writes, not increase it."
+	}
+}

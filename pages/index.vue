@@ -1,7 +1,7 @@
 <template>
   <main>
     <HomeNitronHeader/>
-    <HomeOurGoal/>
+    <HomeWhatIsNitron/>
     <HomeNitronDiagram/>
     <HomeTheTeam/>
   </main>
