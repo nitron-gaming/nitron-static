@@ -38,11 +38,11 @@
 	}
 	.member-name {
 		font-weight: bold;
-		font-size: 2rem;
+		font-size: 1.5rem;
 	}
 	.member-position {
 		color: var(--color-secondary);
-		font-size: 1.5rem;
+		font-size: 1rem;
 	}
 </style>
 
