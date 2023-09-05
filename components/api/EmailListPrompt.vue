@@ -2,7 +2,7 @@
 <template>
 	<header>
 		<h2>
-			Our Cloud API will be released August 30th. Sign up for our email list while you wait:
+			Nitron has been paused indefinitely. If you want to sign up for our email list in case things change, do so below.
 		</h2>
 	</header>
 </template>
